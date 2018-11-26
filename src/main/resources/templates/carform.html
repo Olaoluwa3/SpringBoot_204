@@ -6,12 +6,9 @@
 </head>
 <body>
     <form action="#"
-          th:action="@{/tvform}"
-          th:object="${tvshow}"
+          th:action="@{/car}"
+          th:object="${car}"
           method="post">
-        Id :<input type="number" th:field="*{id}" />
-        <span th:if="${#fields.hasErrors('id')}"
-              th:errors="*{id}"></span><br />
         Name :<input type="text" th:field="*{name}" />
         <span th:if="${#fields.hasErrors('name')}"
               th:errors="*{name}"></span><br />

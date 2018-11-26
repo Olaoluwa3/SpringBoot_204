@@ -4,10 +4,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-public class Tvshow {
-    @NotNull
-    @Min(1)
-    private long id;
+public class Car {
 
     @NotNull
     @Size(min=3, max=20)
@@ -21,13 +18,6 @@ public class Tvshow {
     @Size(min=10, max=30)
     private String description;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
